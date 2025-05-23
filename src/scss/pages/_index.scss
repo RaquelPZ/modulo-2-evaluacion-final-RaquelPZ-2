@@ -1,4 +1,144 @@
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px;
+:root {
+  padding: 0;
+  margin: 0;
 }
+  body{
+    background-color: rgb(163, 0, 70);
+    color: rgb(232, 240, 3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+// INDEX: Header
+header {
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+  .input_anime {
+    width: 225px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 12px;
+    text-align: center;
+  }
+  .btn {
+    background-color: rgb(235, 217, 16);
+    color: rgb(163, 0, 70);
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    font-weight: bold ;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+// INDEX: Main
+main{
+    color: rgb(163, 0, 70);
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    margin-block: 15px;
+    gap:20px;
+}
+  nav  {
+    color: rgb(163, 0, 70);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 15px;
+    margin-bottom: 75px;
+  }
+    .card {
+      background-color: orange;
+      box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.368);
+      padding: 6px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+      .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 150px;
+        height: 60px;
+        margin-bottom: 5px;
+          line-height: 1.4;
+          font-size: 12px;
+          font-weight: 450;
+      }
+      .img {
+        height: 205px;
+        width: 150px;
+        overflow: hidden;
+        img {
+          max-width: 100%;
+          object-fit: contain;
+          border-radius: 3px;
+        }
+      }
+    .card_fav {
+      background-color: rgb(224, 207, 16);
+      color: rgb(163, 0, 70);
+    }
+  section{
+    background-color: rgb(214, 214, 18);
+    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.368);
+    min-height: 290px;
+    min-width: 160px;
+    margin-bottom: 75px;
+    border-radius: 3px;
+    padding: 10px;
+    h5{
+      letter-spacing: 3px;
+    }
+    .card_favorites{
+      display: flex;
+      margin-top: 10px;
+      gap: 5px;
+    }
+      .img_fav{
+        background-color: black;
+        height: 60px;
+        width: 40px;
+        border-radius: 2px;
+        img {
+          max-width: 100%;
+          object-fit: contain;
+          border-radius: 2px;
+        }
+      }
+      .name_fav{
+        line-height: 1.1;
+        font-size: 9px;
+        font-weight: 450;
+        max-width: 95px;
+        text-align: left;
+      }
+}
+
+// INDEX: Footer
+footer {
+  background-color: rgb(224, 207, 16);
+  color: rgb(163, 0, 70);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  height: 50px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+  .brand {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }

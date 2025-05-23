@@ -10,7 +10,6 @@ let writeAnime;
 let card;
 let listAnimes;
 let nameAnime;
-//let cardsFavs = [];
 let listAnimeFavs = [];
 
 // FUNCTION
@@ -69,20 +68,16 @@ album.addEventListener("click", (event) => {
     if (card) {
         let isFav = card.classList.contains("card_fav");
         card.classList.toggle("card_fav");
-        let animeTitleElem = card.querySelector(".name")
-        let animeTitle = animeTitleElem.innerHTML
+        let animeTitleElem = card.querySelector(".name");
+        let animeTitle = animeTitleElem.innerHTML;
         if (isFav){
-            listAnimeFavs = listAnimeFavs.filter(anime => anime.title !== animeTitle)
+            listAnimeFavs = listAnimeFavs.filter(anime => anime.title !== animeTitle);
         } else{
-            let animeData = listAnimes.find(anime => anime.title === animeTitle)
+            let animeData = listAnimes.find(anime => anime.title === animeTitle);
             listAnimeFavs.push(animeData);
         }
-        printCardFav(listAnimeFavs);
-        
+        printCardFav(listAnimeFavs);        
     }
-
-
-
 });
 
 // API
