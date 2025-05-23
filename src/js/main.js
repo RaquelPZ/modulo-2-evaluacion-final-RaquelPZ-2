@@ -3,6 +3,7 @@
 // DATA
 const btnSearch = document.querySelector(".btn_buscar");
 const btnReset = document.querySelector(".btn_reset");
+const btnLog = document.querySelector(".btn_log");
 const inputAnime = document.querySelector(".input_anime");
 const album = document.querySelector(".album");
 const favorites = document.querySelector(".favorites");
@@ -24,6 +25,7 @@ function printCard(searchAnimes){
                        <img src="${searchAnimes[i].images.webp.image_url}"
                        alt="Foto del anime: ${searchAnimes[i].title}">
                    </div>
+                    <div class="type">${searchAnimes[i].type}</div>
                </ul>`;            
            }    
        album.innerHTML = cards;
@@ -59,6 +61,14 @@ btnReset.addEventListener ("click", (ev) =>{
     ev.preventDefault();
     printCard(listAnimes);
     inputAnime.value = " ";
+});
+
+// Click the button and re-enter the search:
+btnLog.addEventListener ("click", (ev) =>{
+    ev.preventDefault();
+    for(let i = 0; i < listAnimeFavs.length; i++){
+            console.log(listAnimeFavs[i].title);
+        }  
 });
 
 // Click on the chrome and add to favorites:
